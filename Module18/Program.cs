@@ -8,8 +8,8 @@
             Task_18_1_6();
             Task_18_2_5();
             Task_18_3_6();
+            Task_18_3_7();
         }
-
         private static void Task_18_1_1()
         {
             var carPlant = new CarPlant();
@@ -61,6 +61,12 @@
             }
 
             return false;
+        }
+        private static void Task_18_3_7()
+        {
+            // Печатаем баннер нужного размера на материале
+            var printer = new Printer();
+            printer.Start(15, "Canvas");
         }
     }
 }
