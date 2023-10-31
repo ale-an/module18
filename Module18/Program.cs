@@ -4,8 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Task_18_1_1();
-            Task_18_1_6();
+            // Task_18_1_1();
+            // Task_18_1_6();
+            Task_18_2_5();
         }
 
         private static void Task_18_1_1()
@@ -38,6 +39,16 @@
 
             clone = myObject.Clone();
             clone.GetId();
+        }
+
+        private static void Task_18_2_5()
+        {
+            Pult pult = new Pult();
+            Gate gate = new Gate();
+
+            pult.SetAction(new GateOpenAction(gate));
+            pult.OpenButton();
+            pult.CloseButton();
         }
     }
 }
