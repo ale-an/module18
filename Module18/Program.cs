@@ -4,9 +4,10 @@
     {
         static void Main(string[] args)
         {
-            // Task_18_1_1();
-            // Task_18_1_6();
+            Task_18_1_1();
+            Task_18_1_6();
             Task_18_2_5();
+            Task_18_3_6();
         }
 
         private static void Task_18_1_1()
@@ -49,6 +50,17 @@
             pult.SetAction(new GateOpenAction(gate));
             pult.OpenButton();
             pult.CloseButton();
+        }
+
+        private static bool Task_18_3_6(params int[] myNumbers)
+        {
+            foreach (var elem in myNumbers)
+            {
+                if (elem > 0)
+                    return true;
+            }
+
+            return false;
         }
     }
 }
